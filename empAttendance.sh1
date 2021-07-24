@@ -1,0 +1,15 @@
+
+#!/bin/bash -x
+
+Empcheck=$((RANDOM%2))
+isPresent=1
+
+if [ $Empcheck -eq $isPresent ]
+then
+   echo "Employee is present"
+
+else
+    echo "Employee is absent"
+
+ fi
+
