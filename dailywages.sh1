@@ -1,0 +1,14 @@
+#!/bin/bash -x
+
+empCheck=$((RANDOM%2))
+isFullTime=1
+empRatePerHr=20
+
+if [ $empCheck -eq $isFullTime ]
+then
+   empHrs=8
+
+else
+   empHrs=0
+fi
+wage=$(( $empHrs*$empRatePerHr ))
