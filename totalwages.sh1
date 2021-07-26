@@ -1,0 +1,27 @@
+#!/bin/bash -x
+
+Is_Part_Time=2
+Emp_Rate_Per_Hr=20
+Num_Of_Working_Days=20
+
+
+totalsalary=0
+
+for (( day=1; day<=$Num_Of_Working_Days; day++))
+do
+
+   empCheck=$((RANDOM%3))
+   case $empcheck in
+   $Is_Part_Time)
+   empHrs=8
+   ;;
+   $Is_Full_Time)
+   emrs=4
+   ;;
+   *)
+   esac
+ wage=$(($empHrs*$Emp_Rate_Per_Hr))
+ totalsalary=$(($totalsalary+$wage))
+ done
+
+
